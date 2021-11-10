@@ -1,22 +1,15 @@
-import { useEffect, useState } from "react";
-import { useCalculator } from "../../context/CalculatorContext";
+import style from "./BillSection.module.css";
 
-const Input = ({ value, header, icon, placeholderText, blurFunction }) => {
-	const [inputValue, setInputValue] = useState();
-
-	useEffect(() => {
-		setInputValue(value);
-	}, [value]);
-
+const Input = ({ value, header, icon, placeholderText, onChangeFunc }) => {
 	return (
-		<div>
-			<div>{header}</div>
-			<i>{icon}</i>
+		<div className={style.input_area}>
+			<div className={style.input_header}>{header}</div>
+			<img className={style.icon} src={icon} alt="" />
 			<input
-				value={inputValue}
+				type="number"
+				value={value}
 				placeholder={placeholderText}
-				onChange={(e) => setInputValue(e.target.value)}
-				onBlur={() => blurFunction(inputValue)}
+				onChange={(e) => onChangeFunc(e.target.value)}
 			/>
 		</div>
 	);

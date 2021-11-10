@@ -1,8 +1,8 @@
 .main {
 	background-color: white;
 	display: grid;
-	width: 800px;
-	height: 350px;
-	grid-template-columns: 400px 400px;
+	width: 700px;
+	height: 340px;
+	grid-template-columns: 350px 350px;
 	border-radius: 15px;
 }

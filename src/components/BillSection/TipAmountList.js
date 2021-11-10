@@ -1,21 +1,23 @@
-import React from "react";
 import Input from "./Input";
 import TipButton from "./TipButton";
 
 import { useCalculator } from "../../context/CalculatorContext";
 
+import style from "./BillSection.module.css";
+
 const TipAmountList = () => {
-	const { tipAmounts, setTipAmount } = useCalculator();
+	const { setTipAmount } = useCalculator();
+	const tipAmounts = [5, 10, 15, 25, 50];
 	return (
-		<div>
+		<div className={style.tip_list}>
 			{tipAmounts.map((value, key) => (
 				<TipButton value={value} key={key} />
 			))}
-			<Input
-				header=""
-				icon=""
-				placeholderText="Custom"
-				blurFunction={setTipAmount}
+			<input
+				type="number"
+				className={style.custom_tip}
+				onChangeFunc={setTipAmount}
+				placeholder="Custom"
 			/>
 		</div>
 	);

@@ -1,26 +1,29 @@
-import React, { useEffect } from "react";
 import Input from "./Input";
 import TipAmountList from "./TipAmountList";
 import { useCalculator } from "../../context/CalculatorContext";
+
+import iconDollar from "../../icons/icon-dollar.svg";
+import iconPerson from "../../icons/icon-person.svg";
+import style from "./BillSection.module.css";
 
 const BillSection = () => {
 	const { bill, setBill, setNumberOfPeople, numberOfPeople } = useCalculator();
 
 	return (
-		<div>
+		<div className={style.bill_section}>
 			<Input
+				icon={iconDollar}
 				header="Bill"
-				icon="$"
 				placeholderText="0"
-				blurFunction={setBill}
+				onChangeFunc={setBill}
 				value={bill}
 			/>
 			<TipAmountList />
 			<Input
 				header="Number Of People"
-				icon="#"
+				icon={iconPerson}
 				placeholderText="0"
-				blurFunction={setNumberOfPeople}
+				onChangeFunc={setNumberOfPeople}
 				value={numberOfPeople}
 			/>
 		</div>

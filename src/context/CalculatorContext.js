@@ -5,7 +5,6 @@ const CalculatorContext = createContext();
 export const CalculatorProvider = ({ children }) => {
 	const [bill, setBill] = useState();
 	const [numberOfPeople, setNumberOfPeople] = useState();
-	const [tipAmounts, setTipAmounts] = useState([5, 10, 15, 25, 50]);
 	const [tipAmount, setTipAmount] = useState();
 	const [paymentTotal, setPaymentTotal] = useState();
 	const [tipTotal, setTipTotal] = useState();
@@ -38,7 +37,6 @@ export const CalculatorProvider = ({ children }) => {
 		setNumberOfPeople,
 		tipAmount,
 		setTipAmount,
-		tipAmounts,
 		paymentTotal,
 		setPaymentTotal,
 		tipTotal,

@@ -1,0 +1,84 @@
+.bill_section {
+	margin: 20px 0px 20px 20px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.input_area input {
+	width: 270px;
+	height: 28px;
+	border-radius: 5px;
+	padding: 8px;
+	font-size: 20px;
+	color: hsl(183, 100%, 15%);
+	font-weight: 700;
+	text-align: right;
+	border: none;
+	background-color: hsl(189, 41%, 97%);
+}
+
+input:focus {
+	outline-color: hsl(172, 67%, 45%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+.input_header {
+	color: hsl(186, 14%, 43%);
+	font-size: 13px;
+	padding-bottom: 5px;
+}
+
+.icon {
+	position: absolute;
+	margin-top: 11px;
+	margin-left: 20px;
+	width: 14px;
+	color: hsl(185, 41%, 84%);
+}
+
+.tip_button {
+	font-family: "Space Mono";
+	width: 89px;
+	height: 40px;
+	font-size: 17px;
+	border: none;
+	border-radius: 5px;
+	font-weight: 700;
+	color: white;
+	background-color: hsl(183, 100%, 15%);
+}
+.tip_button:hover {
+	background-color: hsl(172, 67%, 45%);
+	color: hsl(183, 100%, 15%);
+}
+.custom_tip {
+	width: 89px;
+	text-align: center;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 17px;
+	font-weight: 700;
+	color: hsl(183, 100%, 15%);
+	background-color: hsl(189, 41%, 97%);
+}
+
+.tip_list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}

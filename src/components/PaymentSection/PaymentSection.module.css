@@ -1,6 +1,44 @@
 .payment_section {
 	background-color: hsl(183, 100%, 15%);
 	padding: 20px;
-	margin: 20px;
+	margin: 20px 20px 20px 10px;
 	border-radius: 15px;
+}
+
+.payment_area {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.header {
+	color: hsl(189, 41%, 97%);
+}
+
+.person {
+	color: hsl(186, 14%, 43%);
+}
+
+.value {
+	font-size: 40px;
+	font-weight: 900;
+	color: hsl(172, 67%, 45%);
+}
+
+.reset {
+	width: 100%;
+	height: 38px;
+	background-color: hsl(172, 67%, 45%);
+	border: none;
+	border-radius: 5px;
+	font-weight: 700;
+	font-size: 17px;
+	text-align: center;
+	color: hsl(183, 100%, 15%);
+	margin-top: 50px;
+}
+
+.reset:hover {
+	background-color: hsl(185, 41%, 84%);
 }
