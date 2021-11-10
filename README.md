@@ -1,6 +1,6 @@
 # Tip calculator app
 
-## [Live]()
+## [Live](https://yhertekin-tip-calculator.surge.sh/)
 
 ## Desktop
 

@@ -6,7 +6,7 @@ import { useCalculator } from "../../context/CalculatorContext";
 import style from "./BillSection.module.css";
 
 const TipAmountList = () => {
-	const { setTipAmount } = useCalculator();
+	const { tipAmount, setTipAmount } = useCalculator();
 	const tipAmounts = [5, 10, 15, 25, 50];
 	return (
 		<div className={style.tip_list}>
@@ -16,7 +16,8 @@ const TipAmountList = () => {
 			<input
 				type="number"
 				className={style.custom_tip}
-				onChangeFunc={setTipAmount}
+				value={tipAmount}
+				onChange={(e) => setTipAmount(e.target.value)}
 				placeholder="Custom"
 			/>
 		</div>
