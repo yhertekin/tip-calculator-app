@@ -6,6 +6,6 @@
 
 ![desktop image of application](./pics/desktop.PNG)
 
-<!-- ## Mobile -->
+## Mobile
 
-<!-- ![mobile image of application](./pics/mobile.PNG) -->
+![mobile image of application](./pics/mobile.PNG)
