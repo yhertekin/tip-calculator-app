@@ -8,4 +8,4 @@
 
 ## Mobile
 
-![mobile image of application](./pics/mobile.PNG)
+![mobile image of application](./pics/mobile.png)
