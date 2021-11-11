@@ -42,3 +42,17 @@
 .reset:hover {
 	background-color: hsl(185, 41%, 84%);
 }
+
+@media only screen and (max-width: 768px) {
+	.payment_section {
+		margin: -20px 0px 0px 0px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+	}
+	.reset {
+		/* margin-top: 50px; */
+	}
+	.payment_area {
+		margin-bottom: -10px;
+	}
+}
